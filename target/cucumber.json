@@ -1,0 +1,157 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-03T15:10:54.438Z",
+        "line": 12,
+        "name": "Check values",
+        "description": "",
+        "id": "login-to-facebook;check-values",
+        "after": [
+          {
+            "result": {
+              "duration": 488000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.driverClose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13442000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the facebook login page",
+            "match": {
+              "location": "stepDefinitions.FaceBook_StepDefinition.user_is_on_the_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2575000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters the following credentials",
+            "match": {
+              "location": "stepDefinitions.FaceBook_StepDefinition.user_enters_the_following_credentials(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "sidhantdubey1908@gmail.com",
+                  "saritadubey"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "facebook homepage is displayed",
+            "match": {
+              "location": "stepDefinitions.FaceBook_StepDefinition.facebook_homepage_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-03T15:11:11.172Z",
+        "line": 27,
+        "name": "Check login of facebook",
+        "description": "",
+        "id": "login-to-facebook;check-login-of-facebook;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1341000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.driverClose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8778000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on the facebook login page",
+            "match": {
+              "location": "stepDefinitions.FaceBook_StepDefinition.user_is_on_the_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2609000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters the sidhantdubey08@gmail.com and saritadubey and clicks on Login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sidhantdubey08@gmail.com",
+                  "offset": 16
+                },
+                {
+                  "val": "saritadubey",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.FaceBook_StepDefinition.user_enters_the_and_and_clicks_on_login_button(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "facebook homepage is displayed",
+            "match": {
+              "location": "stepDefinitions.FaceBook_StepDefinition.facebook_homepage_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login to FaceBook",
+    "description": "",
+    "id": "login-to-facebook",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
