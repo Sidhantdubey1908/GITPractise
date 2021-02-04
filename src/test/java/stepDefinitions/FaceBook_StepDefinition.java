@@ -1,17 +1,23 @@
 package stepDefinitions;
 
 import java.awt.List;
+import java.io.File;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.runner.RunWith;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import Cucumber.CucumberAutomation.BaseTest;
 import Cucumber.CucumberAutomation.FaceBookLogin;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
+import io.netty.handler.codec.http.multipart.FileUpload;
 
 @RunWith(Cucumber.class)
 public class FaceBook_StepDefinition extends BaseTest {
@@ -76,5 +82,10 @@ public class FaceBook_StepDefinition extends BaseTest {
    	 System.out.println("Browser is started");
     }
 
+    @And("^i take screenhot$")
+    public void i_take_screenhot() throws Throwable {
+      File screenshot =   ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+      FileUtils.copyFile(screenshot, new File("target\\screenshots\\src.png"));
+    }
 
 }

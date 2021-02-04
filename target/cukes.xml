@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.205">
-<testcase classname="Login to FaceBook" name="Check values" time="16.7">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.852">
+<testcase classname="Login to FaceBook" name="Check values" time="20.083">
 <system-out><![CDATA[Given User is on the facebook login page....................................passed
 When User enters the following credentials..................................passed
 Then facebook homepage is displayed.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login to FaceBook" name="Check login of facebook" time="12.755">
+<testcase classname="Login to FaceBook" name="Check login of facebook" time="15.108">
 <system-out><![CDATA[Given User is on the facebook login page....................................passed
 When User enters the sidhantdubey08@gmail.com and saritadubey and clicks on Login button.passed
 Then facebook homepage is displayed.........................................passed

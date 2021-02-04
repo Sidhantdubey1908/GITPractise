@@ -3,7 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-03T15:10:54.438Z",
+        "start_timestamp": "2021-02-04T18:52:01.445Z",
+        "before": [
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "line": 12,
         "name": "Check values",
         "description": "",
@@ -11,11 +22,11 @@
         "after": [
           {
             "result": {
-              "duration": 488000000,
+              "duration": 2151000000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hooks.driverClose()"
+              "location": "stepDefinitions.Hooks.driverClose(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -24,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13442000000,
+              "duration": 14824000000,
               "status": "passed"
             },
             "line": 13,
@@ -36,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2575000000,
+              "duration": 2800000000,
               "status": "passed"
             },
             "line": 14,
@@ -56,7 +67,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 16,
@@ -74,7 +84,17 @@
         ]
       },
       {
-        "start_timestamp": "2021-02-03T15:11:11.172Z",
+        "start_timestamp": "2021-02-04T18:52:21.559Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "line": 27,
         "name": "Check login of facebook",
         "description": "",
@@ -82,11 +102,11 @@
         "after": [
           {
             "result": {
-              "duration": 1341000000,
+              "duration": 2300000000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hooks.driverClose()"
+              "location": "stepDefinitions.Hooks.driverClose(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -95,7 +115,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8778000000,
+              "duration": 9919000000,
               "status": "passed"
             },
             "line": 20,
@@ -107,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 2609000000,
+              "duration": 2859000000,
               "status": "passed"
             },
             "line": 21,
@@ -129,7 +149,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 22,
