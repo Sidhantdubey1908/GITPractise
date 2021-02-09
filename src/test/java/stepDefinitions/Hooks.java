@@ -19,6 +19,7 @@ public class Hooks extends BaseTest {
 
 	@Before
 	public void beforeScenario(Scenario scenario) {
+		getDriver();
 		if (!isReportedRunning) {
 			customExtentReprot = new ExtentReportGeneartor("D:\\CucumberAutomation2\\target\\TestReport.html");
 			isReportedRunning = true;

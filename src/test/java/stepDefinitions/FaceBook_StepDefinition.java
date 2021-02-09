@@ -22,8 +22,10 @@ import io.netty.handler.codec.http.multipart.FileUpload;
 @RunWith(Cucumber.class)
 public class FaceBook_StepDefinition extends BaseTest {
 
-	WebDriver driver = BaseTest.getDriver();
-	FaceBookLogin fb = new FaceBookLogin("https://www.facebook.com/enespanol/");
+	
+	//WebDriver driver = getDriver();
+	String strURL = getProperty("URL");
+	FaceBookLogin fb = new FaceBookLogin(strURL);
 	
 	
     @Given("^User is on the facebook login page$")
